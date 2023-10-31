@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import jsonData from "./slider.json";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import "./aptinfo.css";
 
 

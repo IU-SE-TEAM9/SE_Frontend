@@ -2,7 +2,7 @@ import React from "react";
 import './PropertyDetails.css'
 import { useState } from "react";
 import { useParams } from 'react-router-dom';
-import Carousel from 'react-bootstrap/Carousel';
+// import Carousel from 'react-bootstrap/Carousel';
 import jsonData from '../carousel'
 import notBookmarked from '../Assets/magnifyingGlass.svg'
 import Bookmarked from '../Assets/Bookmarked.svg'

@@ -12,9 +12,9 @@ const Nav = () => {
         setShowLogin(!showLogin);
     };
 
-    const toggleSignup = () => {
-        setShowSignup(!showSignup);
-    };
+    // const toggleSignup = () => {
+    //     setShowSignup(!showSignup);
+    // };
 
     const handleClose = () => {
         setShowLogin(false);
