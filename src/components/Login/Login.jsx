@@ -23,9 +23,9 @@ const Login = ({ onClose }) => {
       setShowSignup(!showSignup);
     };
 
-    const handleClose1 = () => {
-        setShowSignup(false);
-    };
+    // const handleClose1 = () => {
+    //     setShowSignup(false);
+    // };
 
     // const handleEmailChange = (e) => {
     //     setEmail(e.target.value);
@@ -41,13 +41,6 @@ const Login = ({ onClose }) => {
 
     const handleSubmit = async () => {
         console.log(JSON.stringify(formData))
-        let mydata = {
-            "firstName" : "hello",
-            "lastName" : "hu",
-            "password" : "ueitlkdorkdlgo",
-            "email" : "joe@gmail.com",
-            "phoneNumber" : "2389482937"
-        }
         try {
             const response = await fetch('https://rentr.onrender.com/api/auth/login', {
                 method: 'POST',

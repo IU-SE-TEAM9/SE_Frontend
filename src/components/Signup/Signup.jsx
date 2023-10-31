@@ -38,13 +38,6 @@ const Signup = ({ onClose, onLoginClick }) => {
 
     const handleSubmit = async () => {
         console.log(JSON.stringify(formData))
-        let mydata = {
-            "firstName" : "hello",
-            "lastName" : "hu",
-            "password" : "ueitlkdorkdlgo",
-            "email" : "joe@gmail.com",
-            "phoneNumber" : "2389482937"
-        }
         try {
             const response = await fetch('https://rentr.onrender.com/api/auth/register', {
                 method: 'POST',

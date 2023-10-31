@@ -5,8 +5,8 @@ import Hero from './components/Hero';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header/index';
 import PropertyDetails from './components/PropertyDetails/PropertyDetails'; // Import the PropertyDetails component
-import Login from './components/Login/Login'; // Import the Login component
-import Listings from './components/Listings';
+// import Login from './components/Login/Login'; // Import the Login component
+// import Listings from './components/Listings';
 
 
 function App() {

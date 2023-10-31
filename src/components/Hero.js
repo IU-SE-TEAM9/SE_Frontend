@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './Hero.css';
 import Aptf from './Aptf';
 import Aptinfo from './aptinfo';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 export default function Hero() {
   const [isFurnished, setIsFurnished] = useState(false);

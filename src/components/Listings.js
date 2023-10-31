@@ -1,7 +1,7 @@
 import React,{useState,useRef} from 'react'
 import "./Listings.css"
-import notBookmarked from '../components/Assets/magnifyingGlass.svg'
-import Bookmarked from '../components/Assets/Bookmarked.svg'
+// import notBookmarked from '../components/Assets/magnifyingGlass.svg'
+// import Bookmarked from '../components/Assets/Bookmarked.svg'
 import fitness from '../components/Assets/FitnessCenter.svg'
 import pool from '../components/Assets/Pool.svg'
 import laundry from '../components/Assets/Laundry.svg'
@@ -12,10 +12,10 @@ import pets from '../components/Assets/Pets.svg'
 import snack from '../components/Assets/SnackBar.svg'
 import lock from '../components/Assets/SecureEntries.svg'
 import grill from '../components/Assets/Grill.svg'
-import email from '../components/Assets/mail.svg'
-import phone from '../components/Assets/phone.svg'
-import joe from '../components/Assets/joe.svg'
-import message from '../components/Assets/message.svg'
+// import email from '../components/Assets/mail.svg'
+// import phone from '../components/Assets/phone.svg'
+// import joe from '../components/Assets/joe.svg'
+// import message from '../components/Assets/message.svg'
 export default function Listings() {
     const [selectedFile, setSelectedFile] = useState(null);
   const fileInputRef = useRef(null);
