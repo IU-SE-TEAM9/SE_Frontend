@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: -20px;
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    outline: none;
+  }
+
+  .navbar-item img {
+    margin-left: 50px;
+  }
+
+  .Notifications {
+    border: none;
+    background-color: transparent;
+  }
+
+  .Notifications img {
+    height: 28px;
+  }
+
+  .ProfilePic {
+    border: none;
+    background-color: transparent;
+    margin-left: 20px;
+  }
+
+  .ProfilePic img{
+    height: 50px;
+  }

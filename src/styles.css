@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'BC Alphapipe RB Regular';
+    src: url('/Users/rajeshkumarreddyavula/Desktop/react/apt/src/OnlineWebFonts_COM_2f2c5948c4095b011edc250cb33d7e23/BC Alphapipe RB Regular/BC Alphapipe RB Regular.woff') format('truetype');
+  }
+  
+  .text {
+    font-family: 'BC Alphapipe RB Regular';
+    fill: #24b86f;
+    font-size: 52px;
+    letter-spacing: 0.015em;
+  }
+  

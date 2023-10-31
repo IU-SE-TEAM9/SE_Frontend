@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "image": "https://s3.amazonaws.com/cdn.ucribs.com/images/listings/2288/Crimson%20Crossing%20Apartment%203.jpg",
+    "Address": "Kinser pike",
+    "description": "Crimson Crossing"
+  },
+  {
+    "id": 2,
+    "image": "https://fountainpark-apts.com/wp-content/uploads/2017/12/Fountain-Park-4K-13-720x480.jpg",
+    "Address": "10th street",
+    "description": "Fountain Park"
+  },
+  {
+    "id": 3,
+    "image": "https://www.thefieldsbloomington.com/uploads/images/images/1336x1336G/688863/Pool_Area.jpg?1641943867",
+    "Address": "Fenbrook Ln",
+    "description": "The Fields"
+  },
+  {
+    "id": 4,
+    "image": "https://images1.apartments.com/i2/pHEJ-LZzvP6p3unGVeORyhn_g50eESX1QZ_ovvUaD2E/111/verve-bloomington-bloomington-in-primary-photo.jpg",
+    "Address": "Walnut St",
+    "description": "Verve apartments"
+  },
+  {
+    "id": 5,
+    "image": "https://images1.apartments.com/i2/NJcHkzIlO47AEWeV0R5W9cTkzzE0KGVzniir6MLrJUM/111/hoosier-court-apartments-bloomington-in-exterior---building-and-grounds.jpg",
+    "Address": "Kinser Pike",
+    "description": "Hoosier Court"
+  },
+  {
+    "id": 6,
+    "image": "https://s3.amazonaws.com/rcp-prod-uploads/property_images/webp/2022-10/a465c2aae8cc396f9249c71ae5de55fe6036e7b33v.jpg",
+    "Address": "Longview Ave",
+    "description": "Relato"
+  },
+  {
+    "id": 7,
+    "image": "https://greatlakescapital.com/wp-content/uploads/2021/10/Hayden-Flats.png",
+    "Address": "S Rogers St",
+    "description": "Hayden Flats"
+  },
+  {
+    "id": 8,
+    "image": "https://rentpath-res.cloudinary.com/$img_current/t_3x2_webp_xl/9f3a83645719d4ac4b8ebce1d0699c57",
+    "Address": "S Sare Rd",
+    "description": "Steeple Castle"
+  },
+  {
+    "id": 9,
+    "image": "https://res.cloudinary.com/apartmentlist/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/fc58835f64a986beb412480fe8fd81c9.jpg",
+    "Address": "Tupelo",
+    "description": "The Ellett"
+  },
+  {
+    "id": 10,
+    "image": "https://meadowpark-apts.com/wp-content/uploads/2017/12/Meadow-Park-4K-9-720x1080.jpg",
+    "Address": "Smith Rd",
+    "description": "The Meadow Park"
+  },
+  {
+    "id": 11,
+    "image": "https://s3.amazonaws.com/rcp-prod-uploads/property_images/webp/2018-07/IU-Apartment-Building-403589.webp",
+    "Address": "Patterson Dr",
+    "description": "The Dillon"
+  },
+  {
+    "id": 12,
+    "image": "https://www.heraldtimesonline.com/gcdn/presto/2021/11/04/NHEN/df927218-13b3-4bfe-94ae-da8fb587ffed-2_Vivo.jpg",
+    "Address": "Walnut St",
+    "description": "Vivo Living"
+  },
+  {
+    "id": 13,
+    "image": "https://images1.apartments.com/i2/HqT7drKLPYpNkpCQmSgIl7CEOo01jIF-DzFR5lidHBE/111/echo-park-bloomington-in-on-site-leasing-office-future-resident-p.jpg",
+    "Address": "Walnut St",
+    "description": "Echo Park"
+  },
+  {
+    "id": 14,
+    "image": "https://rentpath-res.cloudinary.com/$img_current/t_3x2_webp_xl/8b8d4c991cf6fb389f33baf0f314b1ff",
+    "Address": "Leonard Springs",
+    "description": "Woodland Springs"
+  },
+  {
+    "id": 15,
+    "image": "https://s3.amazonaws.com/rcp-prod-uploads/property_images/webp/2021-02/b512e017e461a48eef7179988cdddffb5927a603HA.jpg",
+    "Address": "College Ave",
+    "description": "3 square"
+  },
+  {
+    "id": 16,
+    "image": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_1200/s3/2/4107/woodbridge-apartments-bloomington-exterior-building-2.jpg",
+    "Address": "John Hinkle PI",
+    "description": "Woodbridge"
+  }
+]

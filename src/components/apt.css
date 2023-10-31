@@ -1,0 +1,122 @@
+.filt{
+    border:1px solid rgb(163, 163, 163);
+    width:100% !important;
+    border-radius:10px;
+}
+.fil{
+    width:44%;
+    border-radius: 10px;    
+    border:1px solid transparent;
+    padding:10px 0;
+    font-weight:700;
+}
+.fil:hover{
+    background-color:rgb(22, 191, 135) ;
+    color:white;
+    font-weight:700;
+}
+.range p{
+    margin-bottom:0;
+    text-align: left !important;
+    font-weight:600
+}
+.horizontal-slider {
+    width: 88%;
+    max-width: 500px;
+    height: 30px;
+    margin:auto;
+    /* border: 1px solid grey; */
+}
+element.style {
+    position: absolute;
+    left: 0px;
+    right: 450px;
+}
+.horizontal-slider .example-track {
+    position: relative;
+    top: 20px;
+    height: 10px;
+    background: rgb(221, 221, 221);
+}
+.example-track.example-track-1 {
+    background: rgb(22, 191, 135);
+}
+.horizontal-slider .example-thumb {
+    position:relative;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    line-height: 60px;
+    color: black !important;;
+    text-align: center;
+    font-size:13px;
+    z-index:100;
+    outline:none; 
+    /* the ouline=none is used whenever we see any blue border  */
+}
+.example-thumb {
+    font-size: 0.5em;
+    text-align: center;
+    color:black;
+    background-color: rgb(22, 191, 135);
+    /* color: white; */
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-weight:600;
+    /* box-sizing: border-box; */
+}
+.bedr{
+    margin-top: 11%;
+}
+.bedr p{
+    text-align: left !important;
+    font-weight:600
+}
+.opt1 .bt,.opt2 .bt{
+   background-color: rgb(245, 244, 244) ;
+   color:black;
+   border : 1px solid transparent;
+   padding:7px 12px;
+   border-radius: 8px;
+   width:11%;
+   text-align: center;
+   font-weight: 700;
+}
+#six{
+    width:12% !important;
+}
+.fil:hover{
+    background-color: rgb(22, 191, 135) !important;
+    color:white !important;
+}
+#bath{
+    margin-top:5% !important;
+}
+.ch1{
+    width:88%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.ch1 label{
+    display:flex;
+    align-items: center;
+    margin:0;
+}
+.ch1 input[type=checkbox]{
+    width:16px;
+     height:25px;
+}
+
+.ch1 input[type=checkbox]:checked{
+     accent-color: rgb(24 156 112) !important;
+     color:white !important;
+     width:16px;
+     height:25px;
+}
+.amen1 p{
+    margin-bottom:0;
+    text-align: left !important;
+    font-weight:600
+}

@@ -1,0 +1,259 @@
+.bigContainer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: auto;
+    background: #fff;
+    border-radius: 44px;
+    padding-bottom: 30px;
+    width: 1200px;
+    height: 600px;
+}
+
+.containerHead {
+    display: flex;
+    flex-direction: row;
+    width: 990px;
+    margin-top: 26px;
+    border-bottom: 2px solid #D5D5D5;
+}
+
+.manageRentalsTitle {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.exitX {
+    display: flex;
+    margin-left: 800px;
+    height: 35px;
+}
+
+.leftPanel {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 210px;
+    border-right: 2px solid #D5D5D5;
+}
+
+.leftPanel button{
+    height: 80px;
+    width: 210px;
+    border: none;
+    text-align: left;
+    text-indent: 12px;
+    border-right: 2px solid #D5D5D5;
+}
+
+.leftPanel button:focus{
+    outline: none;
+}
+
+.Overview {
+    background-color: #84D7AE;
+}
+
+.actions {
+    background-color: transparent;
+}
+
+.userInfo {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #D5D5D5;
+}
+
+.userInfo img {
+    margin-left: 20px;
+}
+
+.userName {
+    margin-left: 20px;
+}
+
+.rightPanel {
+    width: 990px;
+    display: flex;
+    flex-direction: column;
+}
+
+.renterOverview {
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 790px;
+}
+
+.totalBalance {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    background-color: #24B86F;
+    width: 350px;
+    border-radius: 20px 20px 0 0;
+    color: white;
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.3);
+}
+ .BalanceAmt {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+ }
+
+ .BalanceLabel {
+    margin-top: -5px;
+ }
+
+ .charges {
+    height: 320px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+ }
+
+.charge {
+    display: flex;
+    flex-direction: row;
+}
+
+.nameDate {
+    width: 250px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 7px;
+}
+
+.name {
+    font-weight: 500;
+}
+
+.date {
+    font-size: 15px;
+    color: #D5D5D5;
+}
+
+.Amount {
+    margin-top: 7px;
+    color: red;
+}
+
+.payBalance {
+    background-color: #24B86F;
+    border: none;
+    height: 50px;
+    width: 320px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.propDetContainer {
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.3);
+    margin-left: -40px;
+    padding-top: 30px;
+}
+
+.propDetLabel {
+   margin-left: 25px;
+   font-size: 18px;
+   font-weight: 600;
+}
+
+.carousel-inner {
+    border-radius: 20px;
+    height: 200px;
+}
+
+.slide {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.propInfo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    width: 470px;
+    margin-top: 10px;
+}
+
+.propAddr {
+    width: 200px;
+}
+
+.propertyName {
+    font-weight: 600;
+}
+
+.addr {
+    font-size: 13px;
+    width: 200px;
+}
+
+.propUnit {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.unit {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.unitNum {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.propertyOwner {
+    display: flex;
+    flex-direction: row;
+}
+
+.propOwnerCard {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.ownerPic {
+    height: 45px;
+}
+
+.ownContact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+    margin-left: -5px;
+}
+
+.Icon {
+    height: 15px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.ownEmail {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+}
+
+.ownPhone {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+}

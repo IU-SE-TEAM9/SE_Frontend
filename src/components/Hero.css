@@ -1,0 +1,117 @@
+.con2{
+    display:flex;
+    width: 95%;
+    justify-content: space-between;
+}
+.drop{
+    display:flex;
+    flex-direction: row;
+    width:45%;
+    justify-content: left !important;
+}
+.drop p{
+    font-size:24px;
+    display: flex;
+    
+    color:rgb(163, 163, 163);
+}
+#dropd{
+    background-color: white;
+    color:black;
+    border-color:rgb(163, 163, 163)
+}
+.loc{
+    display: flex;
+    color:rgb(22, 191, 135);
+    align-items: center;
+}
+.amen p{
+    font-size: 16px;
+}
+.loc .bi{
+    font-size: 23px !important;
+}
+.con11{
+    margin:auto;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filt{
+    border:1px solid rgb(163, 163, 163);
+    width:25%;
+    border-radius:10px;
+}
+.fil{
+    width:40%;
+    border-radius: 10px;    
+    border:1px solid transparent;
+    padding:10px 0;
+    font-weight:700;
+}
+.fil:hover{
+    background-color:rgb(22, 191, 135) ;
+    color:white;
+    font-weight:800;
+}
+
+.drop1{
+    width:50% !important;
+}
+.ament1{
+    border: 1px solid rgb(163, 163, 163);
+    background-color: white !important;
+    color:grey !important;
+    border-radius:20px;
+    font-weight: 400;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width:10vw;
+    font-size:15px;
+}
+.ament1 .bi{
+    color: rgb(163, 163, 163);
+}
+.filo a{
+    color: rgb(22, 191, 135);
+    text-decoration: none;
+    overflow: hidden;   
+}
+
+.clear-filters-link {
+    text-decoration: underline !important;
+    position: relative;
+    padding: 25px 10px 15px 15px!important;
+    text-align: center;
+    vertical-align: center;
+    cursor: pointer;
+  }
+
+  .clear-filters-link::after {
+    content: '';
+    position: absolute;
+    margin:auto;
+    top:35%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    
+    transition: background-color 0.3s ease-in-out;
+    z-index: -1;
+  }
+
+  .clear-filters-link:hover::after {
+    background-color: rgb(22, 191, 135);
+    border-radius:10px;
+    /* transition-delay: 0.2s !important; */
+  }
+  .clear-filters-link:hover{
+    color:white;
+
+  }
+ .filo p{
+    width: 52%;
+ }

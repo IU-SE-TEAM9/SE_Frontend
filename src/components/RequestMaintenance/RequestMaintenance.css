@@ -1,0 +1,204 @@
+.bigContainer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: auto;
+    background: #fff;
+    border-radius: 44px;
+    padding-bottom: 30px;
+    width: 1200px;
+    height: 600px;
+}
+
+.containerHead {
+    display: flex;
+    flex-direction: row;
+    width: 990px;
+    margin-top: 26px;
+    border-bottom: 2px solid #D5D5D5;
+}
+
+.manageRentalsTitle {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.exitX {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    height: 35px;
+}
+
+.leftPanel {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 210px;
+    border-right: 2px solid #D5D5D5;
+}
+
+.leftPanel button{
+    height: 80px;
+    width: 210px;
+    border: none;
+    text-align: left;
+    text-indent: 12px;
+    border-right: 2px solid #D5D5D5;
+}
+
+.leftPanel button:focus{
+    outline: none;
+}
+
+.request {
+    background-color: #84D7AE;
+}
+
+.actions {
+    background-color: transparent;
+}
+
+.userInfo {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #D5D5D5;
+}
+
+.userInfo img {
+    margin-left: 20px;
+}
+
+.userName {
+    margin-left: 20px;
+}
+
+.rightPanel {
+    width: 990px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.roomPriority {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group {
+    display: flex;  
+    flex-direction: column;
+}
+
+.roomSelector {
+    border-radius: 7px;
+    border: 2px solid #D5D5D5;
+    width: 300px;
+    height: 40px;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.priority {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+.requestLabel {
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.selectPriority {
+    background-color: transparent;
+    border: none;
+}
+
+.selectPriority:focus {
+    outline: none;
+}
+
+.requestInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.descriptionInput {
+    height: 90px;
+    width: 900px;
+    margin-top: 5px;
+    border-radius: 7px;
+    border: 2px solid #D5D5D5;
+}
+
+.descriptionInput:focus {
+    outline: none;
+}
+
+.yesNo {
+    margin-top: 5px;
+}
+
+.Yes {
+    height: 40px;
+    width: 70px;
+    border-radius: 6px 0px 0px 6px;
+    border-left: 2px solid #D5D5D5;
+    border-top: 2px solid #D5D5D5;
+    border-bottom: 2px solid #D5D5D5;
+    border-right: none;
+}
+
+.Yes:focus {
+    outline: none;
+}
+
+.Yes.selected {
+    color: #24B86F;
+    font-weight: 600;
+}
+
+.No {
+    height: 40px;
+    width: 70px;
+    border-radius: 0px 6px 6px 0px;
+    border: 2px solid #D5D5D5;
+}
+
+.No:focus {
+    outline: none;
+}
+
+.No.selected {
+    color: #24B86F;
+    font-weight: 600;
+}
+
+.submitRequest {
+    background-color: #24B86F;
+    border: none;
+    height: 40px;
+    width: 250px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.submitRequest:focus {
+    outline: none;
+}

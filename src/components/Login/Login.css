@@ -1,0 +1,166 @@
+.login-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.login-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    max-width: 550px;
+    border-radius: 30px;
+    width: 70%;
+    
+}
+
+.exit {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700 !important;
+}
+
+.inputs {
+    margin-bottom: 20px;
+}
+
+.input {
+    margin-bottom: 10px;
+}
+.input input{
+    width:460px !important;
+    border-color:rgb(211, 206, 206) !important;
+    background-color: #f9f9f9 !important;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(213, 210, 210);
+    border-color: rgb(213, 210, 210) !important;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    text-align: right;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.or {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-color:rgb(211, 206, 206) !important;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+}
+
+
+
+.apple {
+    background-color: #000;
+    color: #fff;
+}
+
+.facebookText,
+.appleText {
+    margin-left: 10px;
+}
+
+.disabled {
+    display: none;
+}
+.signUp  u{
+    cursor: pointer;
+}
+.exit .bi{
+    font-size:22px;
+    color:#24B86F;
+    margin: 0;
+}
+.exit .bi:hover{
+    color:white;
+    background-color: #24B86F;
+    margin:0 !important;
+    padding:0 !important;
+    border-radius:3px;
+    font-weight:900;
+}
+.services .bi{
+    font-size:24px;
+    margin-left:15px;
+}
+.google img{
+    margin: 0px 15px 0 0 !important;
+    height: 15vmin;
+    width: 4vmin !important;
+}
+.googleText{
+    margin-left:60px !important;
+    color:rgb(211, 206, 206) !important;
+    font-weight:700;
+}
+.google{
+    height: 50px !important;
+    border-color:rgb(213, 210, 210) !important;
+    /* outline: none; */
+    border: 2px solid rgb(213, 210, 210) !important; /* set the border width and color */
+    border-radius: 5px !important; /* optional: add border-radius for rounded corners */
+    padding: 10px 20px !important; 
+}

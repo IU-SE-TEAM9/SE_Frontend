@@ -1,0 +1,103 @@
+body{
+    width:100vw !important;
+}
+.image-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(234, 232, 232);
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  .addt::placeholder{
+    font-style: italic;
+  }
+  .addr1{
+    display: flex !important;
+    flex-direction: row;
+  }
+.addt{
+    display: flex;
+}
+.a{
+    display: flex;
+    justify-content: space-around;
+    margin:50px 0;
+}
+.a p{
+    
+    text-align: left;
+}
+#undb1{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.a1{
+    width:45% !important;
+}
+.b1{
+    width:45% !important;
+
+}
+.image-upload-container p{
+    font-size: 20px;
+    border:4px dashed rgba(85, 85, 85,0.2) !important;
+    border-style:dashed;
+    padding:60px 40px;
+    margin:20px;
+    width:85% !important;
+    color:rgba(85, 85, 85,0.6) !important;
+    background-color: white;
+}
+
+.image-upload-container button{
+    width:85%;
+    background-color: #24b86f !important;
+    font-weight:700;
+    font-size:18px;
+    margin-bottom: 20px;
+}
+.Overview1{
+    display: flex;
+    justify-content: left;
+    width:85% !important;
+}
+.Amenities1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+    border-radius: 16px;
+    max-width: 690px;
+    width: 100%;
+    
+}
+.AmenityLabel1{
+    text-align: left;
+    font-weight:800;
+    font-size:20px;
+    color:rgba(85, 85, 85,0.8)
+}
