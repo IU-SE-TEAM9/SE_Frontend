@@ -1,5 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import Modal from 'react-bootstrap/Modal';
