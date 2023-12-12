@@ -44,7 +44,7 @@ const Signup = ({ onClose, onLoginClick }) => {
 
     const handleSubmit = async () => {
         console.log(JSON.stringify(formData))
-        fetch('http://localhost:5000/api/auth/register', {
+        fetch('https://rentr.onrender.com/api/auth/register', {
                     method: 'POST',
                      headers: {
                          'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ const Signup = ({ onClose, onLoginClick }) => {
                         setAuthToken(data.token)
                         localStorage.setItem('token',data.token)
                         // navigate('/login')
-                        fetch('http://localhost:5000/api/user/getUser',{
+                        fetch('https://rentr.onrender.com/api/user/getUser',{
                             method : 'GET',
                             headers: {
                                 'Content-Type': 'application/json',

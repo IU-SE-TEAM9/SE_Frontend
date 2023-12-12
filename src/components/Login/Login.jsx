@@ -58,7 +58,7 @@ const Login = ({ onClose }) => {
             "phoneNumber" : "2389482937"
         }
 
-        fetch('http://localhost:5000/api/auth/login', {
+        fetch('https://rentr.onrender.com/api/auth/login', {
                     method: 'POST',
                      headers: {
                          'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ const Login = ({ onClose }) => {
                         setAuthToken(data.token)
                         localStorage.setItem('token',data.token)
                         // navigate('/login')
-                        fetch('http://localhost:5000/api/user/getUser',{
+                        fetch('https://rentr.onrender.com/api/user/getUser',{
                             method : 'GET',
                             headers: {
                                 'Content-Type': 'application/json',

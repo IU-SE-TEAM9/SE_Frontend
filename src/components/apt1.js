@@ -51,7 +51,7 @@ const CardSlider = ({ jsonData, filters }) => {
   const Card = ({ data }) => (
     <Link to={`/propertydetails/${data._id}`}>
       <div className="card">
-        <img src={`http://localhost:5000/${data.image}`} alt={data.description} />
+        <img src={`https://rentr.onrender.com/${data.image}`} alt={data.description} />
         
         <h3>{data.description}</h3>
         <p>Address: {data.Address}</p>

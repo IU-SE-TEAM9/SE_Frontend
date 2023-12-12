@@ -268,7 +268,7 @@ export default function Listings() {
 
     console.log(Address,addr, description, apt, zip,rent,bed,bath, image)
 
-    const apiUrl = "http://localhost:5000/api/apt/apartments";
+    const apiUrl = "https://rentr.onrender.com/api/apt/apartments";
 
     try {
       await Axios.post(apiUrl, formData, {

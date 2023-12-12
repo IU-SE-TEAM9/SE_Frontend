@@ -41,7 +41,7 @@ function App() {
     description: "",
   });
 
-  const apiUrl = "http://localhost:5000/api/apt/apartments";
+  const apiUrl = "https://rentr.onrender.com/api/apt/apartments";
   const requestOptions = {
     method: 'GET',
     headers: { 'Content-Type': 'application/json'},
