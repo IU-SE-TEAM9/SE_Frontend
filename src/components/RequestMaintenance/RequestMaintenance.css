@@ -25,7 +25,9 @@
     font-size: 20px;
     font-weight: 600;
 }
-
+.buttonLink{
+    color:black !important;
+}
 .exitX {
     display: flex;
     margin-left: auto;
@@ -36,9 +38,9 @@
 .leftPanel {
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: 530px;
     width: 210px;
-    border-right: 2px solid #D5D5D5;
+    border-right: 1px solid #D5D5D5;
 }
 
 .leftPanel button{
@@ -47,7 +49,8 @@
     border: none;
     text-align: left;
     text-indent: 12px;
-    border-right: 2px solid #D5D5D5;
+    border-right: 1px solid #D5D5D5;
+    color:black;
 }
 
 .leftPanel button:focus{
@@ -55,10 +58,14 @@
 }
 
 .request {
+    height: 80px;
+    width: 210px;
     background-color: #84D7AE;
 }
 
 .actions {
+    height: 80px;
+    width: 210px;
     background-color: transparent;
 }
 
@@ -66,7 +73,7 @@
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-    border-bottom: 2px solid #D5D5D5;
+    border-bottom: 1px solid #D5D5D5;
 }
 
 .userInfo img {
@@ -100,7 +107,7 @@
 
 .roomSelector {
     border-radius: 7px;
-    border: 2px solid #D5D5D5;
+    border: 1px solid #D5D5D5;
     width: 300px;
     height: 40px;
 }
@@ -115,6 +122,7 @@ label {
     flex-direction: row;
     margin-top: 10px;
     margin-left: auto;
+    margin-right: 40px;
 }
 
 .requestLabel {
@@ -131,6 +139,10 @@ label {
     outline: none;
 }
 
+.selectPriorityIcon {
+    height: 50px;
+}
+
 .requestInfo {
     display: flex;
     flex-direction: column;
@@ -142,7 +154,7 @@ label {
     width: 900px;
     margin-top: 5px;
     border-radius: 7px;
-    border: 2px solid #D5D5D5;
+    border: 1px solid #D5D5D5;
 }
 
 .descriptionInput:focus {
@@ -197,6 +209,8 @@ label {
     color: white;
     font-weight: 600;
     font-size: 20px;
+    margin-top: 30px;
+    margin-left: 320px;
 }
 
 .submitRequest:focus {

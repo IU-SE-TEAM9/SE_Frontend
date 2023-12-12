@@ -3,6 +3,10 @@
 #log1 img{
     font-family: "BC Alphapipe RB Regular";
 }
+.app1{
+  display: flex;
+  align-items: center !important;
+}
 .con1{
     display:flex;
     justify-content: space-between;
@@ -41,8 +45,10 @@
 .c button{
     background-color: white;
     border-color: transparent;
-
-    color:aquamarine;
+    font-weight:700;
+    text-decoration: underline;
+    color:#24b86f !important;
+    font-size:18px;
     
 }
 .c a{
@@ -58,11 +64,12 @@
     color:rgb(102, 219, 102);
     overflow: hidden;
 }
+
 .b{
     display: flex;
     align-items: center;
     width: 50vw;
-    border: 1px solid #ccc;
+    border: 1px solid transparent;
     padding: 5px;
     height:40px;
     border-radius:50px;
@@ -76,7 +83,7 @@
     
   }
 
-  .search-input {
+.search-input {
     flex: 1;
     border: none;
     background-color: #f6f6f6;
@@ -100,4 +107,10 @@
   .page-number:hover{
     color:rgb(22, 191, 135) !important;
     background-color: transparent;
+  }
+  .si:hover{
+    background-color:rgb(22, 191, 135);
+    color:white !important;
+    font-size: 800;
+    transition:background-color 0.2s ease-in; 
   }

@@ -1,19 +1,66 @@
 // Hero.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Hero.css';
 import Aptf from './Aptf';
 import Aptinfo from './aptinfo';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { AptProvider } from './AptContext';
+import Apt1 from "./apt1";
 
-export default function Hero() {
+ 
+export default function Hero({onSliderChange, sliderValues, onButtonClick ,jsonData, filters, onCheckboxChange }) {
+  // const [jsonData, setJsonData] = useState([]);
+  // const [filters, setFilters] = useState({
+  //   bed: null,
+  //   bath: null,
+  //   minRent: null,
+  //   maxRent: null,
+  //   description: "",
+  // });
+ 
+ 
+  // useEffect(() => {
+  //   // Fetch your JSON data here
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.get("http://localhost:3000/getData");
+  //       setJsonData(response.data);
+  //     } catch (error) {
+  //       console.error("Error fetching data:", error);
+  //     }
+  //   };
+ 
+  //   fetchData();
+  // }, []);
+  // const handleButtonClick = (key, value) => {
+  //   setFilters((prevFilters) => ({
+  //     ...prevFilters,
+  //     [key]: prevFilters[key] === value ? null : value,
+  //   }));
+  // };
+ 
+  // const handleSliderChange = (values) => {
+  //   setFilters((prevFilters) => ({
+  //     ...prevFilters,
+  //     minRent: values[0],
+  //     maxRent: values[1],
+  //   }));
+  // };
+  // const handleTextInput = (description) => {
+  //   setFilters((prevFilters) => ({
+  //     ...prevFilters,
+  //     description: description,
+  //   }));
+  // };
+  
   const [isFurnished, setIsFurnished] = useState(false);
   const [isPetsAllowed, setIsPetsAllowed] = useState(false);
   const [isWasherDryer, setIsWasherDryer] = useState(false);
   const [isDishwasher, setIsDishwasher] = useState(false);
   const [isBalcony, setIsBalcony] = useState(false);
   const [isParking, setIsParking] = useState(false);
-
-
+ 
+ 
   const handleFurnishedCheckboxChange = (isChecked) => {
     setIsFurnished(isChecked);
   };
@@ -41,16 +88,22 @@ export default function Hero() {
     setIsParking(false);
   };
   return (
-    <Router>
+    
     <div className='con11'>
+    <AptProvider>
       <div className="con2">
+      {/* <Nav handleTextInput={handleTextInput}   /> */}
         <Aptf
-        isFurnished={isFurnished} onFurnishedChange={handleFurnishedCheckboxChange} 
-        isPetsAllowed={isPetsAllowed} onPetsAllowedChange={handlePetsAllowedCheckboxChange} 
-        iswasher={isWasherDryer} onwasherChange={handleWasherDryerCheckboxChange} 
-        isdish={isDishwasher} ondishChange={handleDishwasherCheckboxChange} 
-        isbalcony={isBalcony} onbalcony={handleBalconyCheckboxChange} 
-        isparking={isParking} onparking={handleParkingCheckboxChange} 
+        isFurnished={isFurnished} onFurnishedChange={handleFurnishedCheckboxChange}
+        isPetsAllowed={isPetsAllowed} onPetsAllowedChange={handlePetsAllowedCheckboxChange}
+        iswasher={isWasherDryer} onwasherChange={handleWasherDryerCheckboxChange}
+        isdish={isDishwasher} ondishChange={handleDishwasherCheckboxChange}
+        isbalcony={isBalcony} onbalcony={handleBalconyCheckboxChange}
+        isparking={isParking} onparking={handleParkingCheckboxChange}
+        onButtonClick={onButtonClick}
+        onSliderChange={onSliderChange}
+        sliderValues={sliderValues}
+        filters={filters} onCheckboxChange={onCheckboxChange}
         />
         <div className="drop1">
           <div className="drop mb-3">
@@ -66,7 +119,9 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <Aptinfo />
+          <Apt1 jsonData={jsonData} filters={filters} />
+ 
+ 
         </div>
         <div className="amen mt-5  mr-4">
           <div className="loc">
@@ -124,7 +179,8 @@ export default function Hero() {
       </div>
         </div>
       </div>
+      </AptProvider>
     </div>
-    </Router>
+    
   );
 }

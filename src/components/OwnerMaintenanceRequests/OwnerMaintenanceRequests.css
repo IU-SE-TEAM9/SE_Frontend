@@ -1,0 +1,191 @@
+.requestsContainer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: auto;
+    background: #fff;
+    border-radius: 44px;
+    width: 1200px;
+    height: 600px;
+}
+
+.containerHead {
+    display: flex;
+    flex-direction: row;
+    width: 990px;
+    margin-top: 26px;
+    border-bottom: 2px solid #D5D5D5;
+}
+
+.manageRentalsTitle {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.exitX {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    height: 35px;
+}
+
+.leftPanel {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 210px;
+    border-right: 2px solid #D5D5D5;
+}
+
+.leftPanel button{
+    height: 80px;
+    width: 210px;
+    border: none;
+    text-align: left;
+    text-indent: 12px;
+    border-right: 2px solid #D5D5D5;
+}
+
+.leftPanel button:focus{
+    outline: none;
+}
+
+.maintenanceRequests {
+    height: 80px;
+    width: 210px;
+    background-color: #84D7AE;
+}
+
+.actions {
+    height: 80px;
+    width: 210px;
+    background-color: transparent;
+}
+
+.userInfo {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #D5D5D5;
+}
+
+.userInfo img {
+    margin-left: 20px;
+}
+
+.userName {
+    margin-left: 20px;
+}
+
+.rightPanel {
+    width: 990px;
+    display: flex;
+    flex-direction: column;
+}
+
+.requests {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.priorityLevel {
+    height: 240px;
+    text-align: left;
+    border-bottom: 2px solid #D5D5D5;
+}
+
+.lowPriorityLevel {
+    height: 240px;
+    text-align: left;
+}
+
+.requestCards {
+    display: flex;
+    flex-direction: row;
+}
+
+.priorityLabel {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.requestCard {
+    background-color: white;
+    border-radius: 11px;
+    border: 1px solid #D5D5D5;
+    box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.3);
+    height: 180px;
+    width: 270px;
+    margin-left: 30px;
+    margin-top: 12px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.userRequest {
+    display: flex;
+    flex-direction: row;
+}
+
+.requestStatus {
+    height: 30px;
+    margin-left: auto;
+}
+
+.userName_PropTitle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.renterName {
+    font-weight: 600;
+}
+
+.userImg {
+    height: 40px;
+}
+
+.propRequestTitle {
+    font-size: 13px;
+}
+
+.requestType {
+    font-weight: 600;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    margin-left: 7px;
+}
+
+.requestDescriptionLabel {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 7px;
+}
+
+.descriptionAndPriority {
+    display: flex;
+    flex-direction: row;
+}
+
+.requestDescription {
+    font-size: 14px;
+    margin-left: 7px;
+    width: 196px;
+}
+
+.priorityIcon {
+    height: 45px;
+}
+
+.reqStatus {
+    height: 45px;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+}

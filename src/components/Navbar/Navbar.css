@@ -1,40 +1,99 @@
-.navbar {
-    display: flex;
-    flex-direction: row;
-  }
-  
+.navbar-container {
+  position: relative;
+  top: 0;
+  right: 0; 
+  margin-left: 30px;
+  margin-right: -20px;
+  margin-top: -7px;
+  max-width: 400px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+
+
+.navbar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: -20px;
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  outline: none;
+}
+#img1{
+  width:20%;
+  height:10%;
+}
+@media (max-width: 768px) {
   .navbar-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-    margin-right: -20px;
-    color: inherit;
-    text-decoration: inherit;
-    font-weight: 500;
-    font-size: 18px;
-    outline: none;
+    font-size: 16px; /* Decrease font size for smaller screens */
   }
+}
+.userMenu{
+  color:black;
+}
+.dropdown1{
+  margin:-65px;
+}
+.Notifications {
+  border: none;
+  background-color: transparent;
+  margin-right: 20px;
+}
 
-  .navbar-item img {
-    margin-left: 50px;
-  }
+.Notifications img {
+  height: 28px;
+}
 
-  .Notifications {
-    border: none;
-    background-color: transparent;
-  }
+.Notifications:focus {
+  outline: none;
+}
 
-  .Notifications img {
-    height: 28px;
-  }
+.userMenu {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
 
-  .ProfilePic {
-    border: none;
-    background-color: transparent;
-    margin-left: 20px;
-  }
+.userMenu:focus {
+  outline: none;
+}
 
-  .ProfilePic img{
-    height: 50px;
-  }
+.profilePic {
+  height: 20px;
+}
+
+.name-text {
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+.dropdown-menu {
+  border-radius: 20px;
+  z-index: 100;
+}
+
+.dropdown-item {
+  font-size: 18px;
+}
+
+.dropdown-item img{
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+  background-color: transparent !important;
+}
+
+.dropdown-item:hover {
+  background-color: #F2F4F5 !important;
+}
+

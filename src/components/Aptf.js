@@ -2,12 +2,13 @@ import React from 'react'
 import './apt.css'
 import ReactSlider from 'react-slider'
 import { useState } from 'react';
-
-export default function Aptf({ isFurnished, isPetsAllowed, onFurnishedChange, onPetsAllowedChange, iswasher, isdish, onwasherChange, ondishChange,isbalcony, isparking, onbalcony, onparking }) {
+import { useAptContext } from './AptContext';
+ 
+export default function Aptf({ isFurnished, isPetsAllowed, onFurnishedChange, onPetsAllowedChange, iswasher, isdish, onwasherChange, ondishChange,isbalcony, isparking, onbalcony, onparking, onButtonClick, onSliderChange, sliderValues,filters }) {
   const handleFurnishedCheckbox = (e) => {
     onFurnishedChange(e.target.checked);
   };
-
+ 
   const handlePetsAllowedCheckbox = (e) => {
     onPetsAllowedChange(e.target.checked);
   };
@@ -29,7 +30,7 @@ export default function Aptf({ isFurnished, isPetsAllowed, onFurnishedChange, on
     button3: 'rgb(245, 244, 244)',
     button4: 'rgb(245, 244, 244)',
   });
-
+ 
     const [bc, setbc] = useState({
         button11: 'rgb(245, 244, 244)',
         button21: 'rgb(245, 244, 244)',
@@ -113,7 +114,7 @@ export default function Aptf({ isFurnished, isPetsAllowed, onFurnishedChange, on
         setbc(updatedButtonColor);
         setc(updatedColor);
       };
-
+ 
       const handleToggle2 = (buttonId2) => {
         const updatedButtonColor = {
                button12: buttonId2 === 'button12' ? 'rgb(22, 191, 135)' : 'rgb(245, 244, 244)',
@@ -135,7 +136,7 @@ export default function Aptf({ isFurnished, isPetsAllowed, onFurnishedChange, on
     
         setbc1(updatedButtonColor);
         setc1(updatedColor);
-      };  
+      };   
   return (
     <div>
       <div className="filt py-4 px-2">
@@ -175,89 +176,191 @@ export default function Aptf({ isFurnished, isPetsAllowed, onFurnishedChange, on
   className="horizontal-slider"
   thumbClassName="example-thumb"
   trackClassName="example-track"
-  defaultValue={[300, 3000]} 
+  defaultValue={[300, 3000]}
   ariaLabel={['Lower thumb', 'Upper thumb']}
   ariaValuetext={(state) => `Thumb value ${state.valueNow}`}
-  renderThumb={(props, state) => <div {...props}>${state.valueNow}</div>} 
+  renderThumb={(props, state) => <div {...props}>${state.valueNow}</div>}
   pearling
   minDistance={400}
-  min={300} 
-  max={3000} 
-  step={1} 
+  min={300}
+  max={3000}
+  step={1}
+  onChange={onSliderChange}
 />
-
+ 
 </div>
 <div className="bedr">
     <p className='ml-4'>Bedrooms</p>
     <div className="opt1">
-        <button className='mx-2 bt ' style={{ backgroundColor: bc.button11, color:c.button11, textDecoration: 'none' }}
-            onClick={() => handleToggle1('button11')}>1</button>
-        <button className='mx-2 bt' style={{ backgroundColor: bc.button21, color:c.button21 }}
-            onClick={() => handleToggle1('button21')}>2</button>
-        <button className='mx-2 bt' style={{ backgroundColor: bc.button31, color:c.button31 }}
-            onClick={() => handleToggle1('button31')}>3</button>
-        <button className='mx-2 bt' style={{ backgroundColor: bc.button41, color:c.button41 }}
-            onClick={() => handleToggle1('button41')}>4</button>
-        <button className='mx-2 bt' style={{ backgroundColor: bc.button51, color:c.button51 }}
-            onClick={() => handleToggle1('button51')}>5</button>
-        <button className='mx-2 bt'  style={{ backgroundColor: bc.button61, color:c.button61 }}
-            onClick={() => handleToggle1('button61')} id="six">6+</button>
+    <button
+  className={`mx-2 bt `}
+  id="b11"
+  style={{ backgroundColor: bc.button11, color: c.button11, textDecoration: 'none' }}
+  onClick={() => {
+    handleToggle1('button11');
+    onButtonClick("bed", 1);
+  }}
+>
+  1
+</button>
+<button
+  className={`mx-2 bt `}
+  style={{ backgroundColor: bc.button21, color:c.button21 }}
+  onClick={() => {
+    handleToggle1('button21');
+    onButtonClick("bed", 2);
+  }}
+>
+  2
+</button>
+<button
+  className={`mx-2 bt `}
+  style={{ backgroundColor: bc.button31, color:c.button31 }}
+  onClick={() => {
+    handleToggle1('button31');
+    onButtonClick("bed", 3);
+  }}
+>
+  3
+</button>
+<button
+  className={`mx-2 bt `}
+  style={{ backgroundColor: bc.button41, color:c.button41 }}
+  onClick={() => {
+    handleToggle1('button41');
+    onButtonClick("bed", 4);
+  }}
+>
+  4
+</button>
+<button
+  className={`mx-2 bt `}
+  style={{ backgroundColor: bc.button51, color:c.button51 }}
+  onClick={() => {
+    handleToggle1('button51');
+    onButtonClick("bed", 5);
+  }}
+>
+  5
+</button>
+<button
+  className={`mx-2 bt `}
+  style={{ backgroundColor: bc.button61, color:c.button61}}
+  onClick={() => {
+    handleToggle1('button61');
+    onButtonClick("bed", 6);
+  }}
+>
+  6+
+</button>
     </div>
 </div>
 <div className="bedr" id="bath">
     <p className='ml-4'>Bathrooms</p>
     <div className="opt2">
     <button className='mx-2 bt ' style={{ backgroundColor: bc1.button12, color:c1.button12, textDecoration: 'none' }}
-            onClick={() => handleToggle2('button12')}>1</button>
+            onClick={() => {
+              handleToggle2('button12');
+              onButtonClick("bath", 1);
+            }}>1</button>
         <button className='mx-2 bt' style={{ backgroundColor: bc1.button22, color:c1.button22 }}
-            onClick={() => handleToggle2('button22')}>2</button>
+            onClick={() => {
+              handleToggle2('button22');
+              onButtonClick("bath", 2);
+            }}>2</button>
         <button className='mx-2 bt' style={{ backgroundColor: bc1.button32, color:c1.button32 }}
-            onClick={() => handleToggle2('button32')}>3</button>
+            onClick={() => {
+              handleToggle2('button32');
+              onButtonClick("bath", 3);
+            }}>3</button>
         <button className='mx-2 bt' style={{ backgroundColor: bc1.button42, color:c1.button42 }}
-            onClick={() => handleToggle2('button42')}>4</button>
+            onClick={() => {
+              handleToggle2('button42');
+              onButtonClick("bath", 4);
+            }}>4</button>
         <button className='mx-2 bt' style={{ backgroundColor: bc1.button52, color:c1.button52 }}
-            onClick={() => handleToggle2('button52')}>5</button>
+            onClick={() => {
+              handleToggle2('button52');
+              onButtonClick("bath", 5);
+            }}>5</button>
         <button className='mx-2 bt'  style={{ backgroundColor: bc1.button62, color:c1.button62 }}
-            onClick={() => handleToggle2('button62')} id="six">6+</button>
+            onClick={() => {
+              handleToggle2('button62');
+              onButtonClick("bath", 6);
+            }} id="six">6+</button>
     </div>
 </div>
 <div className="amen1">
-    <p className='ml-4 mt-3'>Amenities</p>
+    <p className='amen-title'>Amenities</p>
     <div className="chk">
     <div className="ch1 ml-4">
     <input
               className="chk2"
               type="checkbox"
               aria-label="Checkbox for following text input"
-              onChange={handleFurnishedCheckbox}
-              checked={isFurnished}
+              onChange={(e) => {
+                
+               
+                handleFurnishedCheckbox(e);
+                
+              }}
+              // checked={isFurnished}
+              // checked={filters.isFurnished}
+              checked={isFurnished && filters.isFurnished}
+              
             />
             <label className='ml-2'>Furnished</label>
           </div>
     </div>
     <div className="ch1 ml-4" >
-    <input className="chk2" type="checkbox" aria-label="Checkbox for following text input" onChange={handlePetsAllowedCheckbox}
-              checked={isPetsAllowed}/>
+    <input className="chk2" type="checkbox" aria-label="Checkbox for following text input" onChange={(e) => {
+                
+                
+                handlePetsAllowedCheckbox(e);
+                
+              }}
+              checked={isPetsAllowed && filters.isPetsAllowed}/>
     <label className='ml-2'>pets Allowed</label>
     </div>
     <div className="ch1 ml-4">
-    <input type="checkbox" aria-label="Checkbox for following text input" onChange={handlewasherCheckbox}
-              checked={iswasher}/>
+    <input type="checkbox" aria-label="Checkbox for following text input"
+  onChange={(e) => {
+                
+   
+    handlewasherCheckbox(e);
+    
+  }}
+              checked={iswasher && filters.iswasher}/>
     <label className='ml-2'>In-Unit Washer & Dryer</label>
     </div>
     <div className="ch1 ml-4">
-    <input type="checkbox" aria-label="Checkbox for following text input" onChange={handledishCheckbox}
-              checked={isdish} />
+    <input type="checkbox" aria-label="Checkbox for following text input" onChange={(e) => {
+                
+                
+                handledishCheckbox(e);
+                
+              }}
+              checked={isdish && filters.isdish} />
     <label className='ml-2'>Dishwasher</label>
     </div>
     <div className="ch1 ml-4">
-    <input type="checkbox" aria-label="Checkbox for following text input" onChange={handlebalconyCheckbox}
-              checked={isbalcony} />
+    <input type="checkbox" aria-label="Checkbox for following text input" onChange={(e) => {
+                
+                
+                handlebalconyCheckbox(e);
+                
+              }}
+              checked={isbalcony && filters.isbalcony} />
     <label className='ml-2'>Balcony</label>
     </div>
     <div className="ch1 ml-4">
-    <input type="checkbox" aria-label="Checkbox for following text input" onChange={handleparkingCheckbox}
-              checked={isparking}/>
+    <input type="checkbox" aria-label="Checkbox for following text input" onChange={(e) => {
+                
+                
+                handleparkingCheckbox(e);
+                
+              }}
+              checked={isparking && filters.isparking}/>
     <label className='ml-2'>Parking</label>
     </div>
     

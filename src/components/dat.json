@@ -1,0 +1,89 @@
+[
+  {
+    "id": 7,
+    "text": "raj",
+    "text2": "raj",
+    "image": "uploads/image-1700290782969-17166505.png"
+  },
+  {
+    "id": 2,
+    "name": "rajesh",
+    "address": "crimson"
+  },
+  {
+    "id": 3,
+    "name": "kumar",
+    "address": "4a"
+  },
+  {
+    "id": 4
+  },
+  {
+    "id": 5
+  },
+  {
+    "id": 6,
+    "name": "kjb",
+    "address": "kjbnkjnbw"
+  },
+  {
+    "name": "img1",
+    "imageUrl": "http://localhost:3000/uploads/1700094976779.png"
+  },
+  {
+    "name": "img1",
+    "imageUrl": "http://localhost:3000/uploads/1700095591470.png"
+  },
+  {
+    "text": "kjbh",
+    "image": "uploads/image-1700186029913-935855805.png"
+  },
+  {
+    "id": 8,
+    "text": "qqq",
+    "text2": "qqq",
+    "image": "uploads/image-1700290926275-548322328.png"
+  },
+  {
+    "id": 9,
+    "text": "hi hello",
+    "text2": "kjkbjkjbkjbh",
+    "image": null
+  },
+  {
+    "id": 10,
+    "text": "lknl",
+    "text2": "lkn",
+    "image": null
+  },
+  {
+    "id": 11,
+    "text": "kjn",
+    "text2": "kjb",
+    "image": null
+  },
+  {
+    "id": 12,
+    "text": "lkjnkljn",
+    "text2": "kljbkjnl",
+    "image": null
+  },
+  {
+    "id": 13,
+    "text": "mmm",
+    "text2": "mmm",
+    "image": "uploads/image-1700293114114-26779383.png"
+  },
+  {
+    "id": 14,
+    "text": "rajeshkumar",
+    "text2": "1496 N Kinser Pike 4A",
+    "image": "uploads/image-1700293573272-882875829.png"
+  },
+  {
+    "id": 15,
+    "text": "lkn",
+    "text2": "ljn",
+    "image": "uploads/image-1700376210864-755830094.png"
+  }
+]

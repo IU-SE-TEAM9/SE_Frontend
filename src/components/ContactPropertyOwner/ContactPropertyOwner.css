@@ -1,0 +1,187 @@
+.bigContainer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: auto;
+    background: #fff;
+    border-radius: 44px;
+    padding-bottom: 30px;
+    width: 1200px;
+    height: 600px;
+}
+
+.containerHead {
+    display: flex;
+    flex-direction: row;
+    width: 990px;
+    margin-top: 26px;
+    border-bottom: 2px solid #D5D5D5;
+}
+
+.manageRentalsTitle {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.exitX {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    height: 35px;
+}
+
+.leftPanel {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 210px;
+    border-right: 2px solid #D5D5D5;
+}
+
+.leftPanel button{
+    height: 80px;
+    width: 210px;
+    border: none;
+    text-align: left;
+    text-indent: 12px;
+    border-right: 2px solid #D5D5D5;
+}
+
+.leftPanel button:focus{
+    outline: none;
+}
+
+.contactPropOwner {
+    height: 80px;
+    width: 210px;
+    background-color: #84D7AE;
+}
+
+.actions {
+    height: 80px;
+    width: 210px;
+    background-color: transparent;
+}
+
+.userInfo {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #D5D5D5;
+}
+
+.userInfo img {
+    margin-left: 20px;
+}
+
+.userName {
+    margin-left: 20px;
+}
+
+.rightPanel {
+    width: 990px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ownerProfilePic {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    height: 100px;
+    width: 100px;
+}
+
+.ownerContactInfo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ownerEmailValue {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    margin-left: -50px;
+}
+
+.ownerPhoneValue {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    margin-left: -50px;
+}
+
+.emailIcon {
+    height: 17px;
+    margin-top: 4px;
+    margin-right: 20px;
+}
+
+.phoneIcon {
+    height: 18px;
+    margin-top: 4px;
+    margin-right: 20px;
+}
+
+.ownName {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contactValue {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.reviewLabel {
+    margin-right: auto;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.ownerReviews {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedbackCard {
+    border: 1.5px solid #D5D5D5;
+    border-radius: 10px;
+    height: 150px;
+    width: 250px;
+    margin-left: 20px;
+    padding: 7px;
+}
+
+.feedbackHeader {
+    display: flex;
+    flex-direction: row;
+}
+
+.rating {
+    width: 100px;
+    height: 20px;
+    margin-left: auto;
+}
+
+.feedbackUser {
+    display: flex;
+    flex-direction: row;
+}
+
+.feedbackUserName {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.feedbackComment {
+    font-size: 14px;
+    text-align: left;
+}

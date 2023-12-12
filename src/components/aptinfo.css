@@ -4,16 +4,19 @@
 }
 .card {
   background-color: #f0f0f0;
-  padding: 10px;
+  padding: 10px !important;
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
-  height: 100%; 
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  width: 200px; /* Adjust the width as per your design */
 }
+
+/* Other CSS remains the same */
+
 .card:hover{
   background-color: rgb(22, 191, 135,0.5);
   box-shadow: -10px 10px 20px 0px rgba(0,0,0,0.2)
@@ -42,6 +45,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* 3 columns per row */
   grid-template-rows: 180px 180px 180px;
+  
   grid-gap: 10px; /* Adjust the gap as needed */
   grid-row-gap: 10px;
  

@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react'
 import verve from "./Assets/Verve/Verve1.png"
 // carouselData.js
 

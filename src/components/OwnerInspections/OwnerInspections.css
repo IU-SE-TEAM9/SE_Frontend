@@ -1,0 +1,101 @@
+.ownerDocsContainer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: auto;
+    background: #fff;
+    border-radius: 44px;
+    width: 1200px;
+    height: 600px;
+}
+
+.containerHead {
+    display: flex;
+    flex-direction: row;
+    width: 990px;
+    margin-top: 26px;
+    border-bottom: 2px solid #D5D5D5;
+}
+
+.ownerPropertiesTitle {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 300px;
+    text-align: left;
+}
+
+.exitX {
+    display: flex;
+    margin-left: auto;
+    height: 35px;
+}
+
+.leftPanel {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 210px;
+    border-right: 2px solid #D5D5D5;
+}
+
+.leftPanel button{
+    height: 80px;
+    width: 210px;
+    border: none;
+    text-align: left;
+    text-indent: 12px;
+    border-right: 2px solid #D5D5D5;
+}
+
+.leftPanel button:focus{
+    outline: none;
+}
+
+.ownInspections {
+    height: 80px;
+    width: 210px;
+    background-color: #84D7AE;
+}
+
+.actions {
+    height: 80px;
+    width: 210px;
+    background-color: transparent;
+}
+
+.userInfo {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #D5D5D5;
+    height: 62px;
+}
+
+.userInfo img {
+    margin-left: 20px;
+}
+
+.userName {
+    margin-left: 20px;
+}
+
+.ownerDocsrightPanel {
+    width: 990px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 990px;
+    height: 519px;
+    display: flex;
+    flex-direction: row;
+}
+
+.inspectionCard {
+    margin-right: 30px;
+}

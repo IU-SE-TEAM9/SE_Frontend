@@ -1,0 +1,180 @@
+.ownerDocsContainer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: auto;
+    background: #fff;
+    border-radius: 44px;
+    width: 1200px;
+    height: 600px;
+}
+
+.containerHead {
+    display: flex;
+    flex-direction: row;
+    width: 990px;
+    margin-top: 26px;
+    border-bottom: 2px solid #D5D5D5;
+}
+
+.ownerPropertiesTitle {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 300px;
+    text-align: left;
+}
+
+.exitX {
+    display: flex;
+    margin-left: auto;
+    height: 35px;
+}
+
+.leftPanel {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 210px;
+    border-right: 2px solid #D5D5D5;
+}
+
+.leftPanel button{
+    height: 80px;
+    width: 210px;
+    border: none;
+    text-align: left;
+    text-indent: 12px;
+    border-right: 2px solid #D5D5D5;
+}
+
+.leftPanel button:focus{
+    outline: none;
+}
+
+.ownerDocs {
+    height: 80px;
+    width: 210px;
+    background-color: #84D7AE;
+}
+
+.actions {
+    height: 80px;
+    width: 210px;
+    background-color: transparent;
+}
+
+.userInfo {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #D5D5D5;
+    height: 62px;
+}
+
+.userInfo img {
+    margin-left: 20px;
+}
+
+.userName {
+    margin-left: 20px;
+}
+
+.ownerDocsrightPanel {
+    width: 990px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.panelContent {
+    width: 990px;
+    height: 519px;
+    display: flex;
+    flex-direction: row;
+}
+
+.folders {
+    background-color: white;
+    border-right: 2px solid #D5D5D5;
+    width: 200px;
+    height: 519px;
+    display: flex;
+    flex-direction: column;
+}
+
+.folder {
+    height: 30px;
+    background-color: transparent;
+    border-bottom: 1.5px solid #D5D5D5;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+}
+
+.folder:focus {
+    background-color: #E0E0E0;
+}
+
+.folder:hover {
+    background-color: #C7EAD9;
+}
+
+.ownDocs {
+    display: flex;
+    flex-direction: row;
+}
+
+.ownerDoc {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.ownerDocThumbnail {
+    height: 200px;
+    width: 150px;
+    border: 1px solid #D5D5D5;
+    border-radius: 3px;
+}
+
+.docName {
+    text-align: left;
+    font-size: 14px;
+}
+
+.docDate {
+    text-align: left;
+    font-size: 12px;
+    color: #D5D5D5;
+}
+
+.docDetailsContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.ownerDownloadButton {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+}
+
+.downloadButton:focus{
+    outline: none;
+}
+
+.ownerDownloadIcon {
+    height: 15px;
+}
+
+.document-row {
+    display: flex;
+    flex-direction: row;
+}

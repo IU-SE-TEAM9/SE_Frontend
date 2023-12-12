@@ -1,18 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import jsonData from "./slider.json";
-// import { Link } from 'react-router-dom';
 import "./aptinfo.css";
-
-
-function Card({ data, onClick }) {
-  return (
-    <div className="card" onClick={onClick}>
-      <img src={data.image} alt={data.description} />
-      <h3>{data.description}</h3>
-      <p>Address: {data.Address}</p>
-    </div>
-  );
-}
 
 export default function Aptinfo() {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -44,23 +33,27 @@ export default function Aptinfo() {
 
   const [startIndex, endIndex] = getCardRange();
 
-  const handleCardClick = (id) => {
-    // Redirect to the property details page
-    // You can modify the route path according to your requirement
-    window.location.href = `/propertydetails/${id}`;
-  };
+  const Card = ({ data }) => (
+    <Link to={`/propertydetails/${data.id}`} className="card-link">
+      <div className="card">
+        <img src={data.image} alt={data.description} />
+        <h3>{data.description}</h3>
+        <p>Address: {data.Address}</p>
+      </div>
+    </Link>
+  );
 
   return (
     <div className="carousel">
       <div className="carousel-container">
         {jsonData.slice(startIndex, endIndex).map((item) => (
-          <Card key={item.id} data={item} onClick={() => handleCardClick(item.id)} />
+          <Card key={item.id} data={item} />
         ))}
       </div>
 
       <div className="pagination">
-        <button onClick={handlePrev} className="btn ">
-        {"<"}
+        <button onClick={handlePrev} className="btn">
+          {"<"}
         </button>
         {Array.from({ length: totalSlides }, (_, index) => (
           <button
@@ -71,10 +64,14 @@ export default function Aptinfo() {
             {index + 1}
           </button>
         ))}
+
         <button onClick={handleNext} className="btn">
-        {">"}
+          {">"}
         </button>
       </div>
+      <Link to="/login">
+        <h1>hii</h1>
+      </Link>
     </div>
   );
 }

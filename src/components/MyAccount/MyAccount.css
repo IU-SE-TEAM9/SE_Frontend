@@ -1,0 +1,165 @@
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 25px;
+    outline: 0;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: auto;
+    background: #fff;
+    padding-bottom: 30px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.modal-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    width: 100%;
+}
+
+.modalExit {
+    border: none;
+    background-color: transparent;
+}
+
+.modalExit:hover {
+    outline: none;
+    background-color: transparent;
+}
+
+.modalExit:focus {
+    outline: none;
+}
+
+.modalExit img{
+    margin-left: auto;
+    height: 20px;
+    width: 20px;
+}
+
+.modalTitle{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profilePic {
+    height: 90px;
+}
+
+.myAccountContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.accountInfoUserName {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accountInfoUserName img {
+    margin-left: 10px;
+    height: 18px;
+}
+
+.accountInfo {
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: left;
+}
+
+.userEmail {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #D5D5D5; 
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    color: #707070;
+    width: 350px;
+  }
+
+.userPassword {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #D5D5D5;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.unmaskPassword {
+    border: none;
+    background-color: transparent;
+    height: 30px;
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+}
+
+.password {
+    border: none;
+    color: #707070;
+    margin-left: 10px;
+}
+
+.unmaskPassword img{
+    display: flex;
+    align-self: center;
+}
+
+.unmaskPassword:focus{
+    outline: none;
+}
+
+.Mask {
+    height: 9px;
+    margin-right: 3px;
+}
+
+.changePasswordLink{
+    color: #24B86F;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.saveChanges {
+    height: 45px;
+    width: 360px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    background-color: #24B86F;
+    border: none;
+    border-radius: 100px;
+    color:#FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+

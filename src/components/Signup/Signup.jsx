@@ -1,11 +1,17 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import './Signup.css';
 import Login from "../Login/Login";
 import google from"../Assets/Google__G__Logo.png"
+import { useAuth } from "../context/authContext";
+import { useNavigate } from 'react-router-dom';
 
 const Signup = ({ onClose, onLoginClick }) => {
     const [disabled, setDisabled] = useState(false);
     const [showLogin, setShowLogin] = useState(false);
+
+    const navigate = useNavigate();
+    const {token,setAuthToken, authUser, setAuthUser} = useAuth();
 
     const [formData, setFormData] = useState({
         firstName: "",
@@ -38,26 +44,45 @@ const Signup = ({ onClose, onLoginClick }) => {
 
     const handleSubmit = async () => {
         console.log(JSON.stringify(formData))
-        try {
-            const response = await fetch('https://rentr.onrender.com/api/auth/register', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    // 'Access-Control-Allow-Origin': '*'
-                },
-                body: JSON.stringify(formData),
-                // body : mydata,
-                //mode: 'no-cors'
-            });
-
-            if (response.ok) {
-                console.log("Registration successful");
-            } else {
-                console.error("Registration failed");
-            }
-        } catch (error) {
-            console.error("Error:", error);
-        }
+        fetch('http://localhost:5000/api/auth/register', {
+                    method: 'POST',
+                     headers: {
+                         'Content-Type': 'application/json',
+                         // 'Access-Control-Allow-Origin': '*'
+                     },
+                     body: JSON.stringify(formData),
+                     // body : mydata,
+                    //mode: 'no-cors'
+                }).then((response) => response.json())
+                .then((data) => {
+                    if(data.success){
+                        setAuthToken(data.token)
+                        localStorage.setItem('token',data.token)
+                        // navigate('/login')
+                        fetch('http://localhost:5000/api/user/getUser',{
+                            method : 'GET',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'authorization' : 'Bearer ' + data.token
+                            }
+                        }).then((response) => response.json())
+                        .then((data) => {
+                            if(data.success){
+                                console.log("user data",data, JSON.stringify(data.data))
+                                
+                                let stingyUser = JSON.stringify(data)
+                                console.log("JSOJ parse", data.data.userId)
+                                setAuthUser(JSON.stringify(data.data))
+                                localStorage.setItem('user',JSON.stringify(data.data))
+                                console.log("user details created")
+                                navigate('/login')
+                            }
+                        })
+                    }else{
+                        console.log("Auth Failed")
+                    }
+                })
+        
     };
 
     return (

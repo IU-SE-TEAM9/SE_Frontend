@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import './PropertyDetails.css'
 import { useState } from "react";
 import { useParams } from 'react-router-dom';
-// import Carousel from 'react-bootstrap/Carousel';
+import Carousel from 'react-bootstrap/Carousel';
 import jsonData from '../carousel'
 import notBookmarked from '../Assets/magnifyingGlass.svg'
 import Bookmarked from '../Assets/Bookmarked.svg'
@@ -22,12 +23,15 @@ import joe from '../Assets/joe.svg'
 import message from '../Assets/message.svg'
 // import verve1 from '../Assets//Verve/Verve1.png'
 import studio from '../Assets/Verve/studio.png'
+import tbr from "../Assets/Verve/2bds.png"
+import threebr from "../Assets/Verve/3bds.png"
 
 const PropertyDetails= () => {
     const { id } = useParams(); // Retrieve the property ID from the URL
 
   // Find the property details from the JSON data based on the ID
-    const property = jsonData.find((item) => item.id === parseInt(id));
+    const randomIndex = Math.floor(Math.random() * jsonData.length);
+    const property = jsonData[randomIndex]
     const [isBookmarked, setIsBookmarked] = useState(false)
     const toggleBookmark = () => {setIsBookmarked(!isBookmarked)}
     const [selectedFloorplan, setSelectedFloorplan] = useState(null);
@@ -41,14 +45,14 @@ const PropertyDetails= () => {
           bath: '1'
         },
         '2 Beds': {
-          image: '2bed-image.jpg',
+          image: tbr,
           price: '$1,299',
           size: '779 sqft',
           bed: '2',
           bath: '2'
         },
         '3+ Beds': {
-          image: '3plusbed-image.jpg',
+          image: threebr,
           price: '$2,400',
           size: '1200 sq. ft',
           bed: 'None',
@@ -162,7 +166,7 @@ const PropertyDetails= () => {
                 </div>
                 </div>
             </div>
-            <div>
+            
             <div className="btn-group btn-group-toggle" data-toggle="buttons">
                 {Object.keys(floorplanDetails).map((floorplanOption) => (
                 <label
@@ -179,16 +183,25 @@ const PropertyDetails= () => {
             </div>
             <div className="floorplanDetails">
                 {selectedFloorplan && (
-                    <div>
-                    <h2>{selectedFloorplan} Floorplan</h2>
-                    <img src={floorplanDetails[selectedFloorplan].image} alt={`${selectedFloorplan} floorplan`} />
-                    <p>Price: {floorplanDetails[selectedFloorplan].price}</p>
-                    <p>Size: {floorplanDetails[selectedFloorplan].size}</p>
+                    <div className="foorplanHeader">
+                       <h2>{selectedFloorplan} Floorplan</h2>
+                    <div className="floorplanContainer">
+                        <div className="floorplanImage">
+                        <img
+                            src={floorplanDetails[selectedFloorplan].image}
+                            alt={`${selectedFloorplan} floorplan`}
+                            style={{ width: '400px', height: 'auto' }}
+                        />
+                        </div>
+                    <div className="floorplanInfo">
+                        <p>Price: {floorplanDetails[selectedFloorplan].price}</p>
+                        <p>Size: {floorplanDetails[selectedFloorplan].size}</p>
+                    </div>
+                    </div>
                     </div>
                 )}
             </div>
             </div>
-        </div>
     )
 }
 

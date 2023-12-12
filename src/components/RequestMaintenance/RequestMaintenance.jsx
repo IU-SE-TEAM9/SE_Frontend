@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+/* eslint-disable no-unused-vars */
+import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+import Modal from 'react-bootstrap/Modal';
 import './RequestMaintenance.css'
 import profilePic from '../Assets/exampleProfilePic.svg'
-import x from '../../Components/Assets/x.svg'
-import lowUnselected from '../../Components/Assets/lowPriorityUnselected.png'
-import mediumUnselected from '../../Components/Assets/MediumPriorityUnselected.png'
-import highUnselected from '../../Components/Assets/HighPriorityUnselected.png'
-import lowSelected from '../../Components/Assets/lowPrioritySelected.png'
-import mediumSelected from '../../Components/Assets/MediumPrioritySelected.png'
-import highSelected from '../../Components/Assets/HighPrioritySelected.png'
+import x from '../Assets/x.svg'
+import lowUnselected from '../Assets/lowPriorityUnselected.png'
+import mediumUnselected from '../Assets/MediumPriorityUnselected.png'
+import highUnselected from '../Assets/HighPriorityUnselected.png'
+import lowSelected from '../Assets/lowPrioritySelected.png'
+import mediumSelected from '../Assets/MediumPrioritySelected.png'
+import highSelected from '../Assets/HighPrioritySelected.png'
 
-const RequestMaintenance= () => {
+function RequestMaintenance () {
     const [lowPrioritySelected, setLowPrioritySelected] = useState(false);
     const [mediumPrioritySelected, setMediumPrioritySelected] = useState(false);
     const [highPrioritySelected, setHighPrioritySelected] = useState(false);
@@ -57,86 +60,103 @@ const RequestMaintenance= () => {
             setAnimalNoSelected(true);
         }
     };
-
-    return ( 
-        <div className = "bigContainer">
-            <div className="leftPanel">
-                <div className="userInfo">
-                    <img src={profilePic} alt="" />
-                    <div className="userName">Jane Doe</div>
-                </div>
-                <button className="actions">Overview</button>
-                <button className="actions">Documents</button>
-                <button className="request">Request Maintenance</button>
-                <button className="actions">Contact Property Owner</button>
-                <button className="actions">Inspections</button>
-            </div>
-            <div className="rightPanel">
-                <div className="containerHead">
-                    <div className="manageRentalsTitle">Request Maintenance</div>
-                    <div className="exitX"> <img src={x} alt="" /> </div>
-                </div>
-                <div className="form">
-                    <div className="section">
-                        <div className="roomPriority">
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">Room/Area</label>
-                                <select class="roomSelector" id="exampleFormControlSelect1">
-                                <option>Kitchen</option>
-                                <option>Living Room</option>
-                                <option>Bedroom</option>
-                                <option>Bathroom</option>
-                                <option>Balcony</option>
-                                <option>Other</option>
-                                </select>
-                            </div>
-                            <div className="priority">
-                                <div className="requestLabel">Priority:</div>
-                                    <button className="selectPriority" onClick={toggleLowPriority}>
-                                        <img src={lowPrioritySelected ? lowSelected : lowUnselected} alt="low priority Icon" />
-                                    </button>
-                                    <button className="selectPriority" onClick={toggleMediumPriority}>
-                                        <img src={mediumPrioritySelected ? mediumSelected : mediumUnselected} alt="medium priority Icon" />
-                                    </button>
-                                    <button className="selectPriority" onClick={toggleHighPriority}>
-                                        <img src={highPrioritySelected ? highSelected : highUnselected} alt="high priority Icon" />
-                                    </button>
-                            </div>
-                        </div>
-                        <div className="requestInfo">
-                            <div className="requestLabel">Description</div>
-                            <textarea class="descriptionInput" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            <div className="requestLabel">Do you agree to let the property owner and/or maintenance person enter your unit to work on this maintenance issue?</div>
-                            <div className="yesNo">
-                                <button
-                                    className={`Yes ${pteYesSelected ? 'selected' : ''}`}
-                                    onClick={() => handlePteSelect("Yes")}>
-                                    Yes
-                                </button>                                   
-                                <button
-                                    className={`No ${pteNoSelected ? 'selected' : ''}`}
-                                    onClick={() => handlePteSelect("No")}>
-                                    No
-                                </button>
-                            </div>
-                            <div className="requestLabel">Do you have an animal?</div>
-                            <div className="yesNo">
-                                <button
-                                    className={`Yes ${animalYesSelected ? 'selected' : ''}`}                                        onClick={() => handleAnimalSelect("Yes")}>
-                                    Yes
-                                </button>
-                                <button
-                                    className={`No ${animalNoSelected ? 'selected' : ''}`}
-                                    onClick={() => handleAnimalSelect("No")}>
-                                    No
-                                </button>
-                            </div>
-                        </div>
-                        <button className="submitRequest">Submit Request</button>
+    return (
+        <>
+            <Modal show={true} onHide={() => {}}>
+                <Modal.Header>
+                    <div className = "modalTitle"> Request Maintenance </div>
+                    <Link to="/landing-page" className="buttonLink">
+                        <button className="modalExit">
+                            <img src={x} />
+                        </button>
+                    </Link>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="leftPanel">
+                    <div className="userInfo">
+                        <img src={profilePic} alt="" />
+                        <div className="userName">Jane Doe</div>
                     </div>
-                </div>
-            </div>
-        </div>
+                    <Link to="/renter-overview" className="buttonLink">
+                        <button className="actions">Overview</button>
+                    </Link>
+                    <Link to="/renter-documents" className="buttonLink">
+                        <button className="actions">Documents</button>
+                    </Link>
+                    <Link to="/renter-maintenance-requests" className="buttonLink">
+                        <button className="request">Request Maintenance</button>
+                    </Link>
+                    <Link to="/contact-owner" className="buttonLink">
+                        <button className="actions">Contact Property Owner</button>
+                    </Link>
+                    <Link to="/renter-inspections" className="buttonLink">
+                        <button className="actions">Inpections</button>
+                    </Link>
+                    </div>
+                    <div className="rightPanel">
+                        <div className="form">
+                            <div className="section">
+                                <div className="roomPriority">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Room/Area</label>
+                                        <select class="roomSelector" id="exampleFormControlSelect1">
+                                        <option>Kitchen</option>
+                                        <option>Living Room</option>
+                                        <option>Bedroom</option>
+                                        <option>Bathroom</option>
+                                        <option>Balcony</option>
+                                        <option>Other</option>
+                                        </select>
+                                    </div>
+                                    <div className="priority">
+                                        <div className="requestLabel">Priority:</div>
+                                            <button className="selectPriority" onClick={toggleLowPriority}>
+                                                <img src={lowPrioritySelected ? lowSelected : lowUnselected} alt="low priority Icon" className="selectPriorityIcon"/>
+                                            </button>
+                                            <button className="selectPriority" onClick={toggleMediumPriority}>
+                                                <img src={mediumPrioritySelected ? mediumSelected : mediumUnselected} alt="medium priority Icon" className="selectPriorityIcon"/>
+                                            </button>
+                                            <button className="selectPriority" onClick={toggleHighPriority}>
+                                                <img src={highPrioritySelected ? highSelected : highUnselected} alt="high priority Icon" className="selectPriorityIcon"/>
+                                            </button>
+                                    </div>
+                                </div>
+                                <div className="requestInfo">
+                                    <div className="requestLabel">Description</div>
+                                    <textarea class="descriptionInput" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <div className="requestLabel">Do you agree to let the property owner and/or maintenance person enter your unit to work on this maintenance issue?</div>
+                                    <div className="yesNo">
+                                        <button
+                                            className={`Yes ${pteYesSelected ? 'selected' : ''}`}
+                                            onClick={() => handlePteSelect("Yes")}>
+                                            Yes
+                                        </button>                                   
+                                        <button
+                                            className={`No ${pteNoSelected ? 'selected' : ''}`}
+                                            onClick={() => handlePteSelect("No")}>
+                                            No
+                                        </button>
+                                    </div>
+                                    <div className="requestLabel">Do you have an animal?</div>
+                                    <div className="yesNo">
+                                        <button
+                                            className={`Yes ${animalYesSelected ? 'selected' : ''}`}                                        onClick={() => handleAnimalSelect("Yes")}>
+                                            Yes
+                                        </button>
+                                        <button
+                                            className={`No ${animalNoSelected ? 'selected' : ''}`}
+                                            onClick={() => handleAnimalSelect("No")}>
+                                            No
+                                        </button>
+                                    </div>
+                                </div>
+                                <button className="submitRequest">Submit Request</button>
+                            </div>
+                        </div>
+                    </div>
+                </Modal.Body>
+            </Modal>
+        </>
     )
 }
 
